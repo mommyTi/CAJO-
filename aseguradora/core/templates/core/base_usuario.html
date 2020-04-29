@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title> Bienvenido Usuario</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Perfil usuario</title>
+    {% load static %}
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'core/css/bootstrap.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'core/css/one-page-wonder.css' %}" rel="stylesheet">
+
 </head>
+
 <body>
-<h1> Ud ha ingresado al perfil usuario </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="https://fotos.subefotos.com/a2551e3355521d921f08c5a172019206o.png" width="30" alt="">Asegurado</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white" style=" background-image: url(https://fotos.subefotos.com/2039cfe6a874bd1b721e51955591247fo.png)">
+    <div class="masthead-content">
+      <div class="container">
+
+      	<h1 style="color: black"> UD se encuentra en la visual del Asegurado donde podrá ver sus estados de siniestros y ver en que fase se encuentra</h1>
+<!--         {% block contenido %}
+
+        {% endblock contenido %} -->
+      </div>
+    </div>
+  </header>
+  
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Portafolio Duoc</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
 
 </body>
+
 </html>
